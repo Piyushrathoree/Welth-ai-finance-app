@@ -1,5 +1,4 @@
-# Full Stack AI Fianace Platform with Next JS, Supabase, Tailwind, Prisma, Inngest, ArcJet, Shadcn UI Tutorial 🔥🔥
-## https://youtu.be/egS6fnZAdzk
+# An AI - finance management application which allow users to manage their finances
 
 <img width="1470" alt="Screenshot 2024-12-10 at 9 45 45 AM" src="https://github.com/user-attachments/assets/1bc50b85-b421-4122-8ba4-ae68b2b61432">
 
@@ -22,4 +21,66 @@ RESEND_API_KEY=
 
 ARCJET_KEY=
 ```
+
 # Welth-ai-finance-app
+
+## Features
+
+-   AI-powered financial insights and recommendations
+-   Manage accounts, budgets, and transactions
+-   Receipt scanning and transaction import
+-   Secure authentication (Clerk)
+-   Email notifications (Resend)
+-   Modern, responsive UI (Next.js, Tailwind CSS)
+
+## Tech Stack
+
+-   Next.js 14 (App Router)
+-   React 18
+-   Tailwind CSS
+-   Prisma ORM & PostgreSQL
+-   Clerk (Authentication)
+-   Resend (Email)
+-   Gemini API (AI)
+-   Arcjet (Security)
+
+## Getting Started
+
+1. **Clone the repository:**
+    ```bash
+    git clone https://github.com/Piyushrathoree/Welth-ai-finance-app.git
+    cd Welth-ai-finance-app
+    ```
+2. **Install dependencies:**
+    ```bash
+    pnpm install
+    ```
+3. **Set up your `.env` file:**
+   Copy the example above and fill in your credentials.
+4. **Run database migrations:**
+    ```bash
+    pnpm prisma migrate dev
+    ```
+5. **Start the development server:**
+    ```bash
+    pnpm dev
+    ```
+6. **Visit** `http://localhost:3000` **in your browser.**
+
+## Folder Structure
+
+```
+actions/         # Server actions (API logic)
+app/             # Next.js app directory (routes, pages, layouts)
+components/      # Reusable UI components
+data/            # Static data files
+emails/          # Email templates
+hooks/           # Custom React hooks
+lib/             # Utilities, Prisma, and integrations
+prisma/          # Prisma schema and migrations
+public/          # Static assets
+```
+
+## License
+
+This project is licensed under the MIT License.
