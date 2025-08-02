@@ -138,7 +138,7 @@ const LandingPage = () => {
                                         ))}
                                     </div>
                                     <p className="text-neutral-600 dark:text-neutral-300 mb-6 italic">
-                        "{testimonial.quote}"
+                        {testimonial.quote}
                     </p>
                                     <div className="flex items-center">
                                         <Image
