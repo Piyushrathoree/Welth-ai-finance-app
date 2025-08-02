@@ -5,6 +5,12 @@ import {
   CreditCard,
   Globe,
   Zap,
+  Brain,
+  Shield,
+  TrendingUp,
+  Smartphone,
+  Lock,
+  Sparkles,
 } from "lucide-react";
 
 // Stats Data
@@ -30,58 +36,58 @@ export const statsData = [
 // Features Data
 export const featuresData = [
   {
-    icon: <BarChart3 className="h-8 w-8 text-blue-600" />,
-    title: "Advanced Analytics",
+    icon: <Brain className="h-8 w-8 text-neutral-600" />,
+    title: "AI-Powered Insights",
     description:
-      "Get detailed insights into your spending patterns with AI-powered analytics",
+      "Get intelligent recommendations and insights powered by advanced machine learning algorithms.",
   },
   {
-    icon: <Receipt className="h-8 w-8 text-blue-600" />,
+    icon: <Receipt className="h-8 w-8 text-neutral-600" />,
     title: "Smart Receipt Scanner",
     description:
-      "Extract data automatically from receipts using advanced AI technology",
+      "Automatically extract and categorize transaction data from receipts using computer vision.",
   },
   {
-    icon: <PieChart className="h-8 w-8 text-blue-600" />,
-    title: "Budget Planning",
-    description: "Create and manage budgets with intelligent recommendations",
+    icon: <PieChart className="h-8 w-8 text-neutral-600" />,
+    title: "Intelligent Budgeting",
+    description: "Create adaptive budgets that learn from your spending patterns and lifestyle.",
   },
   {
-    icon: <CreditCard className="h-8 w-8 text-blue-600" />,
-    title: "Multi-Account Support",
-    description: "Manage multiple accounts and credit cards in one place",
+    icon: <CreditCard className="h-8 w-8 text-neutral-600" />,
+    title: "Multi-Account Management",
+    description: "Seamlessly manage multiple bank accounts, credit cards, and investment portfolios.",
   },
   {
-    icon: <Globe className="h-8 w-8 text-blue-600" />,
-    title: "Multi-Currency",
-    description: "Support for multiple currencies with real-time conversion",
+    icon: <Globe className="h-8 w-8 text-neutral-600" />,
+    title: "Global Currency Support",
+    description: "Track finances across multiple currencies with real-time exchange rates.",
   },
   {
-    icon: <Zap className="h-8 w-8 text-blue-600" />,
-    title: "Automated Insights",
-    description: "Get automated financial insights and recommendations",
+    icon: <TrendingUp className="h-8 w-8 text-neutral-600" />,
+    title: "Predictive Analytics",
+    description: "Forecast future expenses and income with advanced predictive modeling.",
   },
 ];
 
 // How It Works Data
 export const howItWorksData = [
   {
-    icon: <CreditCard className="h-8 w-8 text-blue-600" />,
-    title: "1. Create Your Account",
+    icon: <Smartphone className="h-8 w-8 text-neutral-600" />,
+    title: "1. Connect Your Accounts",
     description:
-      "Get started in minutes with our simple and secure sign-up process",
+      "Securely link your bank accounts and credit cards with bank-level encryption.",
   },
   {
-    icon: <BarChart3 className="h-8 w-8 text-blue-600" />,
-    title: "2. Track Your Spending",
+    icon: <BarChart3 className="h-8 w-8 text-neutral-600" />,
+    title: "2. AI Analyzes Your Data",
     description:
-      "Automatically categorize and track your transactions in real-time",
+      "Our AI automatically categorizes transactions and identifies spending patterns.",
   },
   {
-    icon: <PieChart className="h-8 w-8 text-blue-600" />,
-    title: "3. Get Insights",
+    icon: <Sparkles className="h-8 w-8 text-neutral-600" />,
+    title: "3. Get Personalized Insights",
     description:
-      "Receive AI-powered insights and recommendations to optimize your finances",
+      "Receive actionable insights and recommendations to optimize your financial health.",
   },
 ];
 
@@ -92,7 +98,7 @@ export const testimonialsData = [
     role: "Small Business Owner",
     image: "https://randomuser.me/api/portraits/women/75.jpg",
     quote:
-      "Welth has transformed how I manage my business finances. The AI insights have helped me identify cost-saving opportunities I never knew existed.",
+      "This platform has completely transformed how I manage my business finances. The AI insights helped me identify cost-saving opportunities I never knew existed.",
   },
   {
     name: "Michael Chen",
@@ -106,6 +112,6 @@ export const testimonialsData = [
     role: "Financial Advisor",
     image: "https://randomuser.me/api/portraits/women/74.jpg",
     quote:
-      "I recommend Welth to all my clients. The multi-currency support and detailed analytics make it perfect for international investors.",
+      "I recommend this platform to all my clients. The multi-currency support and detailed analytics make it perfect for international investors.",
   },
 ];

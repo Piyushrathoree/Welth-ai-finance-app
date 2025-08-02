@@ -10,10 +10,10 @@ const Header = async () => {
     await checkUser();
 
     return (
-        <header className="fixed top-0 w-full bg-white/80 dark:bg-gray-950/90 backdrop-blur-md z-50 border-b border-gray-200 dark:border-gray-800">
+        <header className="fixed top-0 bg-transparent  w-full glass dark:glass-dark backdrop-blur-md z-50 border-b border-neutral-200/20 dark:border-neutral-700/20">
             <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
                 <Link href="/">
-                    <h1 className="text-3xl italic text-blue-600 font-bold">
+                    <h1 className="text-3xl font-bold bg-gradient-to-r from-neutral-900 via-neutral-700 to-neutral-900 dark:from-white dark:via-neutral-300 dark:to-white bg-clip-text text-transparent">
                         Welth
                     </h1>
                 </Link>
@@ -23,13 +23,13 @@ const Header = async () => {
                     <SignedOut>
                         <a
                             href="#features"
-                            className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+                            className="text-neutral-600 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white transition-colors duration-200"
                         >
                             Features
                         </a>
                         <a
                             href="#testimonials"
-                            className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+                            className="text-neutral-600 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white transition-colors duration-200"
                         >
                             Testimonials
                         </a>
@@ -42,9 +42,9 @@ const Header = async () => {
                     <SignedIn>
                         <Link
                             href="/dashboard"
-                            className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 flex items-center gap-2"
+                            className="text-neutral-600 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white transition-colors duration-200 flex items-center gap-2"
                         >
-                            <Button variant="outline">
+                            <Button variant="outline" className="border-neutral-300 dark:border-neutral-600 hover:bg-neutral-50 dark:hover:bg-neutral-800">
                                 <LayoutDashboard size={18} />
                                 <span className="hidden md:inline">
                                     Dashboard
@@ -52,7 +52,7 @@ const Header = async () => {
                             </Button>
                         </Link>
                         <a href="/transaction/create">
-                            <Button className="flex items-center gap-2">
+                            <Button className="flex items-center gap-2 bg-neutral-900 hover:bg-neutral-800 dark:bg-white dark:text-neutral-900 dark:hover:bg-neutral-100">
                                 <PenBox size={18} />
                                 <span className="hidden md:inline">
                                     Add Transaction
@@ -62,7 +62,9 @@ const Header = async () => {
                     </SignedIn>
                     <SignedOut>
                         <SignInButton forceRedirectUrl="/dashboard">
-                            <Button variant="outline">Login</Button>
+                            <Button variant="outline" className="border-neutral-300 dark:border-neutral-600 hover:bg-neutral-50 dark:hover:bg-neutral-800">
+                                Login
+                            </Button>
                         </SignInButton>
                     </SignedOut>
                     <SignedIn>
